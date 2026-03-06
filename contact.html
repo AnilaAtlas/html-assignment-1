@@ -1,62 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Fashion & Beauty Blog</title>
+    <title>Contact Us</title>
 </head>
-<body>
+
+<body bgcolor="lightblue">
     <header>
         <h1>Contact Us</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="./about.html">About</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
-        </nav> <br><hr><br>
+        <p>We do love to hear from you! Please fill out the form below.</p>
     </header>
 
     <main>
-        <section>
-            <h2>We do love to hear from you!</h2>
-            <p>
-                Whether you have questions about fashion trends, beauty products, or just want to share your thoughts, feel free to reach out. 
-                Fill out the form below and we’ll get back to you as soon as possible.
-            </p>
-        </section>
- <section>
-            <h2>Contact Form</h2>
-            <form action="submit_form.php" method="post">
-                <label for="name">Full Name:</label><br>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+        <form action="#" method="post">
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
 
-                <label for="email">Email Address:</label><br>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
 
-                <label for="subject">Subject:</label><br>
-                <input type="text" id="subject" name="subject" placeholder="Message subject" required><br><br>
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="123-456-7890"><br><br>
 
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea><br><br>
+            <label for="password">Create a Password:</label><br>
+            <input type="password" id="password" name="password"><br><br>
 
-                <button type="submit">Send Message</button>
-            </form>
-        </section><br>
-<hr><br>
-        <section>
-            <h2>Other Ways to Connect</h2>
-            <p>Email: <a href="mailto:info@fashionbeautyblog.com">info@fashionbeautyblog.com</a></p>
-            <p>Follow us on social media:</p>
-            <ul>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Twitter</a></li>
-            </ul>
-        </section>
-    </main><br><br>
-<hr>
+            <label for="age">Your Age:</label><br>
+            <input type="number" id="age" name="age" min="1" max="120"><br><br>
+
+            <label for="date">Preferred Contact Date:</label><br>
+            <input type="date" id="date" name="date"><br><br>
+
+            <label for="time">Preferred Contact Time:</label><br>
+            <input type="time" id="time" name="time"><br><br>
+
+            <p>How would you like us to contact you?</p>
+            <input type="radio" id="contact-email" name="contact-method" value="email" checked>
+            <label for="contact-email">Email</label><br>
+            <input type="radio" id="contact-phone" name="contact-method" value="phone">
+            <label for="contact-phone">Phone</label><br><br>
+
+            <p>What services are you interested in?</p>
+            <input type="checkbox" id="consulting" name="services" value="consulting">
+            <label for="consulting">Consulting</label><br>
+            <input type="checkbox" id="support" name="services" value="support">
+            <label for="support">Customer Support</label><br>
+            <input type="checkbox" id="newsletter" name="services" value="newsletter">
+            <label for="newsletter">Newsletter Subscription</label><br><br>
+
+            <label for="file">Upload a File (optional):</label><br>
+            <input type="file" id="file" name="file"><br><br>
+
+            <label for="satisfaction">Rate Your Satisfaction (1-10):</label><br>
+            <input type="range" id="satisfaction" name="satisfaction" min="1" max="10"><br><br>
+
+            <label for="message">Your Message:</label><br>
+            <textarea id="message" name="message" rows="5" cols="40"
+                placeholder="Write your message here..."></textarea><br><br>
+
+            <input type="submit" value="Send Message">
+            <input type="reset" value="Clear Form">
+        </form>
+    </main>
+
     <footer>
+        <p>Thank you for reaching out. We wll respond as soon as possible!</p>
         <p>&copy; 2026 Fashion & Beauty Blog. All rights reserved.</p>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -65,5 +74,5 @@
         </ul>
     </footer>
 </body>
-</html>
 
+</html>
