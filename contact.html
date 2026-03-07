@@ -1,66 +1,95 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Contact Us</title>
+    <meta charset="UTF-8" />
+    <title>#f5dedc</title>
 </head>
 
-<body bgcolor="lightblue">
+<body bgcolor="#f5dedc">
     <header>
         <h1>Contact Us</h1>
         <p>We do love to hear from you! Please fill out the form below.</p>
     </header>
-
     <main>
         <form action="#" method="post">
-            <label for="name">Full Name:</label><br>
-            <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+            <table>
+                <tr>
+                    <td><label for="name">Full Name:</label></td>
+                    <td>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required />
+                    </td>
+                </tr>
 
-            <label for="email">Email Address:</label><br>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+                <tr>
+                    <td><label for="email">Email Address:</label></td>
+                    <td>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required />
+                    </td>
+                </tr>
 
-            <label for="phone">Phone Number:</label><br>
-            <input type="tel" id="phone" name="phone" placeholder="123-456-7890"><br><br>
+                <tr>
+                    <td><label for="phone">Phone Number:</label></td>
+                    <td>
+                        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" />
+                    </td>
+                </tr>
 
-            <label for="password">Create a Password:</label><br>
-            <input type="password" id="password" name="password"><br><br>
+                <tr>
+                    <td><label for="password">Create a Password:</label></td>
+                    <td><input type="password" id="password" name="password" /></td>
+                </tr>
 
-            <label for="age">Your Age:</label><br>
-            <input type="number" id="age" name="age" min="1" max="120"><br><br>
+                <tr>
+                    <td><label for="age">Your Age:</label></td>
+                    <td>
+                        <input type="number" id="age" name="age" min="1" max="120" />
+                    </td>
+                </tr>
 
-            <label for="date">Preferred Contact Date:</label><br>
-            <input type="date" id="date" name="date"><br><br>
+                <tr>
+                    <td><label for="date">Preferred Contact Date:</label></td>
+                    <td><input type="date" id="date" name="date" /></td>
+                </tr>
+                <tr>
+                    <td>How would you like us to contact you?</td>
+                    <td>
+                        <input type="radio" id="contact-email" name="contact-method" value="email" checked />
+                        <label for="contact-email">Email</label>
+                        <input type="radio" id="contact-phone" name="contact-method" value="phone" />
+                        <label for="contact-phone">Phone</label>
+                    </td>
+                </tr>
 
-            <label for="time">Preferred Contact Time:</label><br>
-            <input type="time" id="time" name="time"><br><br>
+                <tr>
+                    <td><label for="file">Upload a File (optional):</label></td>
+                    <td><input type="file" id="file" name="file" /></td>
+                </tr>
 
-            <p>How would you like us to contact you?</p>
-            <input type="radio" id="contact-email" name="contact-method" value="email" checked>
-            <label for="contact-email">Email</label><br>
-            <input type="radio" id="contact-phone" name="contact-method" value="phone">
-            <label for="contact-phone">Phone</label><br><br>
+                <tr>
+                    <td>
+                        <label for="satisfaction">Rate Your Satisfaction (1-10):</label>
+                    </td>
+                    <td>
+                        <input type="range" id="satisfaction" name="satisfaction" min="1" max="10" />
+                    </td>
+                </tr>
 
-            <p>What services are you interested in?</p>
-            <input type="checkbox" id="consulting" name="services" value="consulting">
-            <label for="consulting">Consulting</label><br>
-            <input type="checkbox" id="support" name="services" value="support">
-            <label for="support">Customer Support</label><br>
-            <input type="checkbox" id="newsletter" name="services" value="newsletter">
-            <label for="newsletter">Newsletter Subscription</label><br><br>
+                <tr>
+                    <td><label for="message">Your Message:</label></td>
+                    <td>
+                        <textarea id="message" name="message" rows="5" cols="40"
+                            placeholder="Write your message here..."></textarea>
+                    </td>
+                </tr>
 
-            <label for="file">Upload a File (optional):</label><br>
-            <input type="file" id="file" name="file"><br><br>
-
-            <label for="satisfaction">Rate Your Satisfaction (1-10):</label><br>
-            <input type="range" id="satisfaction" name="satisfaction" min="1" max="10"><br><br>
-
-            <label for="message">Your Message:</label><br>
-            <textarea id="message" name="message" rows="5" cols="40"
-                placeholder="Write your message here..."></textarea><br><br>
-
-            <input type="submit" value="Send Message">
-            <input type="reset" value="Clear Form">
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Send Message" />
+                        <input type="reset" value="Clear Form" />
+                    </td>
+                </tr>
+            </table>
         </form>
     </main>
 
@@ -68,9 +97,8 @@
         <p>Thank you for reaching out. We wll respond as soon as possible!</p>
         <p>&copy; 2026 Fashion & Beauty Blog. All rights reserved.</p>
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="./index.html">Home</a></li>
             <li><a href="./about.html">About</a></li>
-            <li><a href="./contact.html">Contact us</a></li>
         </ul>
     </footer>
 </body>
